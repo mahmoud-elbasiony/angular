@@ -32,8 +32,8 @@ class Saving_Account extends Account implements IAccount
 class Current_Account extends Account implements IAccount
 {
     Date_of_opening;
-    public constructor(private Interest_rate=0){
-        super();
+    public constructor(private Interest_rate=0,Acc_no,Balance=0){
+        super(Acc_no,Balance);
     }
     addCustomer(){}
     removeCustomer(){}
