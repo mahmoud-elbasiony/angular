@@ -40,3 +40,5 @@ class Current_Account extends Account implements IAccount
     debitAmount(){}
     creditAmount(){}
 }
+
+export{}

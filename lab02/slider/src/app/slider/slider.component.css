@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* border: 1px solid black; */
+}
+
+body{
+  padding: 15px;
+
+}
+.container{
+  margin: auto;
+  /* width: 100%; */
+  /* background-color: black; */
+}
+
+.carasoul{
+  padding: 5vh 0;
+  margin: 0 auto;
+  max-width: 80vw;
+  /* min-width: 380px; */
+  /* height: 50vh; */
+  /* min-height: 500px; */
+  position: relative;
+  display: flex;
+  flex-wrap:wrap;
+  /* gap: 100px; */
+  /* flex-direction: column; */
+  /* position: relative; */
+  /* justify-content: center; */
+  align-items: center;
+
+  background-color: lightblue;
+  border-radius: .8vw;
+}
+.slides{
+  /* width: 100%; */
+  display: flex;
+  /* flex: 1; */
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  aspect-ratio: 32/9;
+  padding: 15px;
+}
+img{
+  width: 100%;
+  border-radius: .8vw;
+  height: auto;
+  transition: .25s;
+
+}
+img::selection{
+  background: transparent;
+}
+img:hover{
+  /* width: 80%; */
+  scale: 1.1;
+  transition: .25s;
+  height: auto;
+}
+.slide{
+  display: flex;
+  width: 40%;
+  /* scale: 1; */
+  font-size: 18px;
+  font-weight: bold;
+  /* background-color: blueviolet; */
+  /* transition: 5s; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.slide.center{
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) ;
+   */
+  margin: auto;
+  z-index: 1;
+}
+.slide.hidden{
+  display: none;
+}
+.center{
+  margin: auto;
+}
+
+.carasoulbtn{
+  /* background-color: rebeccapurple; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.carasoulbtn div{
+  width:60px;
+  height: 7px;
+  background-color: gray;
+  border-radius: 4px;
+}
+
+.carasoulbtn .active{
+  background-color: black;
+
+}
+.material-symbols-outlined{
+  display: flex;
+  font-size:3vw;
+  cursor: pointer;
+  /* padding-left: 10px; */
+  position: absolute;
+  top:50%;
+  transform: translatey(-50%);
+
+
+}
+#next{
+  right: 0;
+}
+#prev{
+  padding-left: 5px;
+}
+
+.material-symbols-outlined::selection{
+  background: transparent;
+}
+.material-symbols-outlined:hover{
+  /* font-size:4.05vw; */
+  scale: 1.02;
+  cursor: pointer;
+  scale: 1.2;
+  transition: .15s;
+
+  /* background-color: gray; */
+  /* padding: 2px; */
+}
+
+
+

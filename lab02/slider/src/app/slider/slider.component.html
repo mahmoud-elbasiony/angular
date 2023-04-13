@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="carasoul">
+      <div class="slides">
+          <div class="slide center"><img src="assets/images/{{number}}.jpg" alt=""></div>
+      </div>
+      <span class="material-symbols-outlined" (click)="slideprev()" id="prev">
+          arrow_back_ios
+          </span>
+      <span class="material-symbols-outlined" (click)="slidenext()" id="next">
+          arrow_forward_ios
+          </span>
+      <div class="center">
+        <button (click)="slide()">slide</button>
+        <button (click)="pause()">pause</button>
+      </div>
+  </div>
+</div>
