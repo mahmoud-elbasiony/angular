@@ -1,0 +1,30 @@
+<div class="container mb-5">
+<h2 class="text-center alert alert-dark w-50 m-auto mb-3">Registration</h2>
+<form [formGroup]="validationForm" class="form">
+  <div class="form w-75 m-auto">
+    <div class="mb-3 center">
+      <label for="exampleFormControlInput1" class="form-label" >Name</label>
+      <input formControlName="name" type="text" class="form-control" [ngClass]="{'is-invalid' : !validName && name,'is-valid' :validName}" id="exampleFormControlInput1" placeholder="Name" [(ngModel)]="name">
+      <div class="invalid-feedback" *ngIf="!validName">
+        Please choose a valid name.
+      </div>
+    </div>
+    <div class="mb-3 center">
+      <label for="exampleFormControlInput2" class="form-label">Email</label>
+      <input formControlName="email" type="text" class="form-control" [ngClass]="{'is-invalid' : !validEmail && email,'is-valid' : validEmail}" id="exampleFormControlInput2" placeholder="Email" [(ngModel)]="email">
+      <div class="invalid-feedback" *ngIf="!validEmail">
+        Please choose a valid email.
+      </div>
+    </div>
+    <div class="mb-3 center">
+      <label for="exampleFormControlInput3" class="form-label">Age</label>
+      <input formControlName="age" type="text" class="form-control" [ngClass]="{'is-invalid' : !validAge && age,'is-valid' : validAge}" id="exampleFormControlInput3" placeholder="Age" [(ngModel)]="age">
+      <div class="invalid-feedback" *ngIf="!validAge">
+        Please choose a valid age.
+      </div>
+    </div>
+    <button class="btn btn-dark w-100" (click)="send()">Add</button>
+  </div>
+</form>
+
+</div>
