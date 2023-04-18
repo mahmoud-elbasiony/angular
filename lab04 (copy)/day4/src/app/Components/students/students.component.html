@@ -1,0 +1,24 @@
+<div class="container">
+  <h3 class="alert alert-info">students</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">details</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of students;" >
+      <th scope="row">{{s.id}}</th>
+      <td>{{s.name}}</td>
+      <td>{{s.email}}</td>
+      <td>{{s.age}}</td>
+      <td><a routerLink="/students/{{s.id}}">details</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
