@@ -19,11 +19,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `json-server --watch data.json` inside server folder
 
 
-![alt text](/Screenshot_2023-04-18 Day4.png)
+![alt text](Screenshot1.png?raw=true)
 
-![alt text](/Screenshot_2023-04-18 Day4(1).png)
+![alt text](Screenshot2.png?raw=true)
 
-![alt text](/Screenshot_2023-04-18 Day4(2).png)
+![alt text](Screenshot3.png?raw=true)
 
-![alt text](/Screenshot_2023-04-18 Day4(3).png)
+![alt text](Screenshot4.png?raw=true)
 
